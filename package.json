@@ -1,10 +1,11 @@
 {
-  "name": "x33m0n",
+  "name": "x33m0n-syntax",
   "theme": "syntax",
   "version": "0.0.0",
   "description": "A mostly gray scale syntax theme with a little turquoise and orange",
   "keywords": [
     "syntax",
+    "dark",
     "theme"
   ],
   "repository": "https://github.com/ximonsson/atom-x33m0n-syntax",
