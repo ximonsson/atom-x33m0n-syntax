@@ -12,9 +12,12 @@ atom-text-editor, :host {
 	.invisible-character {
 		color: @syntax-invisible-character-color;
 	}
+	.gutter-container {
+		color: @syntax-gutter-text-color;
+		// border-right: 1px solid @syntax-gutter-text-color;
+	}
 	.gutter {
 		background-color: @syntax-gutter-background-color;
-		color: @syntax-gutter-text-color;
 		.line-number {
 			&.cursor-line {
 				background-color: @syntax-gutter-background-color-selected;
@@ -111,9 +114,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	&.parameter.function {
 		color: @syntax-text-color;
 	}
-	// &.go.assignment,
 	&.declaration {
-		// color: @light-orange;
 		color: white;
 	}
 	&.property,
@@ -329,5 +330,12 @@ atom-text-editor[mini] .scroll-view,
 				color: @string-color;
 			}
 		}
+	}
+}
+
+// MAKEFILE
+.makefile {
+	&.variable.other {
+		color: @cyan;
 	}
 }
